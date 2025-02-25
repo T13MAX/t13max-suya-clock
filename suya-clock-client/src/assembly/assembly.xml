@@ -1,9 +1,9 @@
 <assembly>
 <id>assembly</id>
 <formats>
-    <format>rar</format>
+    <format>zip</format>
 </formats>
-<includeBaseDirectory>true</includeBaseDirectory>
+<includeBaseDirectory>false</includeBaseDirectory>
 <fileSets>
     <fileSet>
         <directory>../suya-clock/</directory>
@@ -11,7 +11,7 @@
             <include>*.sh</include>
             <include>*.bat</include>
         </includes>
-        <outputDirectory>.</outputDirectory>
+        <outputDirectory>./suya-clock</outputDirectory>
         <fileMode>0755</fileMode>
     </fileSet>
     <fileSet>
@@ -19,7 +19,7 @@
         <includes>
             <include>jdk/**/*</include>
         </includes>
-        <outputDirectory>.</outputDirectory>
+        <outputDirectory>./suya-clock</outputDirectory>
     </fileSet>
     <fileSet>
         <directory>../suya-clock/</directory>
@@ -27,21 +27,20 @@
             <include>*.txt</include>
             <include>*.json</include>
         </includes>
-        <outputDirectory>.</outputDirectory>
+        <outputDirectory>./suya-clock</outputDirectory>
     </fileSet>
-
 </fileSets>
 <files>
     <file>
         <source>target/${project.artifactId}-${project.version}.jar</source>
-        <outputDirectory>libs</outputDirectory>
+        <outputDirectory>./suya-clock/libs</outputDirectory>
     </file>
 </files>
 <dependencySets>
     <dependencySet>
         <unpack>false</unpack>
         <scope>runtime</scope>
-        <outputDirectory>libs</outputDirectory>
+        <outputDirectory>./suya-clock/libs</outputDirectory>
     </dependencySet>
 </dependencySets>
 </assembly>
