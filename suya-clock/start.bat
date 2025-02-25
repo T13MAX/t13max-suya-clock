@@ -4,7 +4,7 @@ chcp 65001
 
 setlocal
 
-set INITIAL_MEMORY=-Xms128m
+set INITIAL_MEMORY=-Xms32m
 
 set MAX_MEMORY=-Xmx128m
 

@@ -4,7 +4,7 @@
 export LANG=en_US.UTF-8
 
 # 设置初始和最大内存
-INITIAL_MEMORY="-Xms128m"
+INITIAL_MEMORY="-Xms32m"
 MAX_MEMORY="-Xmx128m"
 
 # 获取脚本目录
