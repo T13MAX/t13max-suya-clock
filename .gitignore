@@ -35,5 +35,6 @@ build/
 .DS_Store
 
 suya-clock/jdk
+suya-clock/logs
 
 suya-clock/*.db
